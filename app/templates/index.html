@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="background">
+        <header>
+            <button id="show-buttons">Mostrar Botões</button>
+            <h1>Seu Título</h1>
+        </header>
+        <div class="content">
+            <button id="back-button">Voltar</button>
+            <div id="buttons-container"></div>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">Menu 1</a></li>
+            <li><a href="#">Menu 2</a></li>
+            <li><a href="#">Menu 3</a></li>
+            <li><a href="#">Menu 4</a></li>
+        </ul>
+    </nav>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
